@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyLearningApp</string>
+    <string name="mylearningapp">MyLearningApp</string>
+    <string name="start_learning">Start Learning</string>
+    <string name="attempt_quiz">ATTEMPT QUIZ</string>
+    <string name="repository">REPOSITORY</string>
+</resources>
