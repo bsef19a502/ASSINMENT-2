@@ -1,9 +1,406 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LearningModule">
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:weightSum="10"
+    tools:context=".LearningModule"
+    tools:ignore="ExtraText">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="ALPHABETS"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="40sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:text="A - Z"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        tools:ignore="RtlCompat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E91E63"
+                android:onClick="func_a"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/btn_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E91E63"
+                android:onClick="func_b"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/btn_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E91E63"
+                android:onClick="func_c"
+                android:text="C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E91E63"
+                    android:onClick="func_d"
+                    android:text="D" />
+
+                <Button
+                    android:id="@+id/btn_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E91E63"
+                    android:onClick="func_e"
+                    android:text="E" />
+
+                <Button
+                    android:id="@+id/btn_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E91E63"
+                    android:onClick="func_f"
+                    android:text="F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#E91E63"
+                        android:onClick="func_g"
+                        android:text="G" />
+
+                    <Button
+                        android:id="@+id/btn_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#E91E63"
+                        android:onClick="func_h"
+                        android:text="H" />
+
+                    <Button
+                        android:id="@+id/btn_i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#E91E63"
+                        android:onClick="func_i"
+                        android:text="I" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_j"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:onClick="func_j"
+                            android:text="J" />
+
+                        <Button
+                            android:id="@+id/btn_k"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:onClick="func_k"
+                            android:text="K" />
+
+                        <Button
+                            android:id="@+id/btn_l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#E91E63"
+                            android:onClick="func_l"
+                            android:text="L" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_m"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#E91E63"
+                                android:onClick="func_m"
+                                android:text="M" />
+
+                            <Button
+                                android:id="@+id/btn_n"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#E91E63"
+                                android:onClick="func_n"
+                                android:text="N" />
+
+                            <Button
+                                android:id="@+id/btn_o"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#E91E63"
+                                android:onClick="func_o"
+                                android:text="O" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#E91E63"
+                                    android:onClick="func_p"
+                                    android:text="P" />
+
+                                <Button
+                                    android:id="@+id/btn_q"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#E91E63"
+                                    android:onClick="func_q"
+                                    android:text="Q" />
+
+                                <Button
+                                    android:id="@+id/btn_r"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="#E91E63"
+                                    android:onClick="func_r"
+                                    android:text="R" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/btn_s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#E91E63"
+                                        android:onClick="func_s"
+                                        android:text="S" />
+
+                                    <Button
+                                        android:id="@+id/btn_t"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#E91E63"
+                                        android:onClick="func_t"
+                                        android:text="T" />
+
+                                    <Button
+                                        android:id="@+id/btn_u"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#E91E63"
+                                        android:onClick="func_u"
+                                        android:text="U" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <Button
+                                            android:id="@+id/btn_v"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:backgroundTint="#E91E63"
+                                            android:onClick="func_v"
+                                            android:text="V" />
+
+                                        <Button
+                                            android:id="@+id/btn_w"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:backgroundTint="#E91E63"
+                                            android:onClick="func_w"
+                                            android:text="W" />
+
+                                        <Button
+                                            android:id="@+id/btn_x"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:backgroundTint="#E91E63"
+                                            android:onClick="func_x"
+                                            android:text="X" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+                                            <Button
+                                                android:id="@+id/btn_y"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:backgroundTint="#E91E63"
+                                                android:onClick="func_y"
+                                                android:text="Y" />
+
+                                            <Button
+                                                android:id="@+id/btn_z"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:backgroundTint="#E91E63"
+                                                android:onClick="func_z"
+                                                android:text="Z" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="7"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E91E63"
+                    android:onClick="func_back"
+                    android:text="BACK" />
+            </LinearLayout>
+
+
+
+</LinearLayout>

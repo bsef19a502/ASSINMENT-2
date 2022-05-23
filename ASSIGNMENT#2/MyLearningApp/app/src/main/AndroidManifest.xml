@@ -14,6 +14,84 @@
         android:theme="@style/Theme.MyLearningApp"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_z"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_y"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_x"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_w"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_v"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_u"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_t"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_s"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_r"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_q"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_p"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_o"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_n"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_m"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_l"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_k"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_j"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_i"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_h"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_g"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_f"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_e"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_d"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_c"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_b"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_a"
+            android:exported="false" />
+        <activity
             android:name=".QuizModule"
             android:exported="false" />
         <activity
