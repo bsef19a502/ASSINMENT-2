@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#EA1F64"
     android:orientation="vertical"
     android:textAlignment="center"
     android:weightSum="10"
@@ -31,18 +32,19 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="bottom"
-        android:padding="10dp"
         android:maxLines="1"
+        android:padding="10dp"
         android:text="A - Z"
         android:textAlignment="center"
         android:textColor="#E91E63"
         android:textSize="30sp"
         tools:ignore="RtlCompat" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="7">
+        android:layout_weight="7"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -350,7 +352,7 @@
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
+                                            android:layout_height="wrap_content"
                                             android:orientation="horizontal">
 
                                             <Button
@@ -371,6 +373,16 @@
                                                 android:onClick="func_z"
                                                 android:text="Z" />
                                         </LinearLayout>
+
+                                        <Button
+                                            android:id="@+id/btn_back"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:backgroundTint="#E91E63"
+                                            android:onClick="func_back"
+                                            android:text="BACK" />
+
                                     </LinearLayout>
                                 </LinearLayout>
                             </LinearLayout>
@@ -380,27 +392,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="vertical"
-            android:weightSum="7"
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+    </LinearLayout>
 
-                <Button
-                    android:id="@+id/btn_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#E91E63"
-                    android:onClick="func_back"
-                    android:text="BACK" />
-            </LinearLayout>
-
-
-
-</LinearLayout>

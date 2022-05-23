@@ -8,60 +8,63 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private Button button;
-    private Button button2;
-    private Button button3;
+public class MainActivity extends AppCompatActivity{
+    public Button btn1;
+    public Button btn2;
+    public Button btn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
+        btn1 = findViewById(R.id.button);
+        btn2 = findViewById(R.id.button2);
+        btn3 = findViewById(R.id.button3);
 
 
-        button.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 startLearning();
             }
         });
 
-
-        button2.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                attemptQuiz();
+            public void onClick(View view)
+            {
+                AttemptQuiz();
             }
         });
 
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                openRepo();
+            public void onClick(View view)
+
+            {
+                Repository();
             }
         });
     }
+    public void startLearning()
+    {
+        Intent learnIntent = new Intent(this, LearningModule.class);
+        startActivity(learnIntent);
+    }
 
-        public void startLearning()
-        {
-            Intent learnIntent = new Intent(this, LearningModule.class);
-            startActivity(learnIntent);
-        }
+    public void AttemptQuiz()
+    {
+        Intent quizIntent = new Intent(this, QuizModule.class);
+        startActivity(quizIntent);
+    }
 
-        public void attemptQuiz()
-        {
-            Intent quizIntent = new Intent(this, QuizModule.class);
-            startActivity(quizIntent);
-        }
+    public void Repository()
+    {
+         Intent RepoIntent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://github.com/bsef19a502/ASSINMENT-2"));
+         startActivity(RepoIntent);
+    }
 
-        public void openRepo()
-        {
-            Intent RepoIntent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://github.com/bsef19a502/ASSINMENT-2"));
-            startActivity(RepoIntent);
-        }
 
 }
