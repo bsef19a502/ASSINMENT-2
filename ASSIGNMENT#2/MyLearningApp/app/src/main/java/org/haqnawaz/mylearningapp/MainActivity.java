@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity{
     public Button btn1;
     public Button btn2;
     public Button btn3;
+    public Button btn4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity{
         btn1 = findViewById(R.id.button);
         btn2 = findViewById(R.id.button2);
         btn3 = findViewById(R.id.button3);
+        btn4 = findViewById(R.id.button4);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +49,15 @@ public class MainActivity extends AppCompatActivity{
                 Repository();
             }
         });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+
+            {
+                CustomizedLearning();
+            }
+        });
     }
     public void startLearning()
     {
@@ -67,4 +78,9 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
+    public void CustomizedLearning()
+    {
+        Intent customIntent = new Intent(this, MainActivity2.class);
+        startActivity(customIntent);
+    }
 }
