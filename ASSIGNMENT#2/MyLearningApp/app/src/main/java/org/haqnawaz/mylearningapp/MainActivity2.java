@@ -28,5 +28,13 @@ public class MainActivity2 extends AppCompatActivity {
         //myList.setAdapter(arrayAdapter);
         CustomAdapter arrayAdapter = new CustomAdapter(getApplicationContext(),Alphabets, images);
         myList.setAdapter(arrayAdapter);
+
+        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                char position = '0';
+                Toast.makeText(MainActivity2.this, "You Clicked on " + Alphabets [i], Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
