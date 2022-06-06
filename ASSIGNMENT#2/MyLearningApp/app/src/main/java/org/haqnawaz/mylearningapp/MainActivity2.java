@@ -21,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         myList = findViewById(R.id.lstView);
         // ArrayAdapter <String> arrayAdapter = new ArrayAdapter<String>(this,R.layout.activity_custom_list_view, R.id.textView, Alphabets);
